@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.tabs__item {
+  padding: 5px 10px;
+  border: transparent; /*прозрачный борбер*/
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
+.tabs__item--active {
+  border: 1px solid green; /*для активного item */
+  border-bottom-color: transparent;
+}
+.content {
+  list-style-type: none;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.content__item {
+  display: none;
+}
+.content__item--active {
+  display: block;
+}
